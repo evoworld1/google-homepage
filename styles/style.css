@@ -1,0 +1,86 @@
+.body-grid {
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav-t nav-t nav-t"
+    "logo logo logo"
+    "searchbox searchbox searchbox"
+    "buttons buttons buttons"
+    "nav-b nav-b nav-b";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height:100%;
+    width:100%;
+}
+
+.navbar-top {
+    grid-area: nav-t;
+    text-align: right;   
+    height: 50px;
+}
+
+.navbar-top li{
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+    font-size: small;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    grid-area: logo;
+    text-align: center;
+}
+
+.logo img{
+    width: 19%;
+    min-width: 213px;
+    height: auto;
+    padding-top: 109px;
+}
+
+.searchbox-frame {
+    display: grid;
+    grid-template-columns: 24px 560px;
+    width: 90%;
+    max-width: 584px;
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    grid-area: searchbox;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.searchbox-frame:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+.searchbox-window {
+    margin-left: 0px;
+    margin-top: 6px;
+    max-width: 527px;
+    width:100%;
+    height: 34px;
+    line-height: 34px;
+    border: none;
+}
+
+.searchbox-window:focus {
+    outline: none;
+}
+
+.navbar-bottom {
+    grid-area: nav-b;
+    height:50px;
+}
+
+.buttons {
+    grid-area: buttons;
+    text-align: center;
+    display: inline-block;
+}
