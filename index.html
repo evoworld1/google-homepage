@@ -2,33 +2,68 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles/style.css" type="text/css" rel="stylesheet">
         <link href="styles/reset.css" type="text/css" rel="stylesheet">
         <title>Google</title>
     </head>
-    
-        <body class=body-grid>
-            <div class="navbar-top">
-                <ul>
-                    <li class=nav-1><a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a></li>
-                    <li class=nav-2><a href="https://www.google.pl/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a></li>
-                </ul>
-            </div>
-            <div class="logo">
-                <img src="images/glogo.png" alt="Google Logo">
-            </div>
-            <div class="searchbox-frame">
-                <img src="images/searchbutton.png" style="padding-top: 14px; padding-left: 6px; width: 20px; height: auto;">
-                <input type="search" class="searchbox-window">
-            </div>
-            <div class="buttons">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky!">
-            </div>
-            <div class="navbar-bottom">
+    <body>
+        <div class="main">
+            <div class="container">
+                
+                <!--Top navigation bar-->
+                
+                <div class="navbar-top">
+                    <ul class="nav-top">
+                        <li><a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a></li>
+                        <li><a href="https://www.google.pl/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a></li>
+                        <li>
+                            <svg class="nav-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 100 100" xml:space="preserve">
+                                <g><g><g><path width="5px" height="5px" d="M281.8,15.6H42.3C24.5,15.6,10,30,10,47.9v239.8c0,17.8,14.5,32.3,32.3,32.3h239.5c17.9,0,32.3-14.4,32.3-32.3V47.9C314.1,30,299.7,15.6,281.8,15.6z"/><path d="M281.8,345H42.3C24.5,345,10,359.5,10,377.3v239.8c0,17.8,14.5,32.3,32.3,32.3h239.5c17.9,0,32.3-14.4,32.3-32.3V377.3C314.1,359.5,299.7,345,281.8,345z"/><path d="M281.8,685.6H42.3C24.5,685.6,10,700,10,717.9v239.8c0,17.8,14.5,32.3,32.3,32.3h239.5c17.9,0,32.3-14.4,32.3-32.3V717.9C314.1,700,299.7,685.6,281.8,685.6z"/><path d="M619.7,10H380.2c-17.8,0-32.3,14.4-32.3,32.3v239.8c0,17.8,14.5,32.3,32.3,32.3h239.5c17.8,0,32.3-14.4,32.3-32.3V42.3C652,24.5,637.6,10,619.7,10z"/><path d="M619.7,339.4H380.2c-17.8,0-32.3,14.5-32.3,32.3v239.8c0,17.8,14.5,32.3,32.3,32.3h239.5c17.8,0,32.3-14.4,32.3-32.3V371.7C652,353.9,637.6,339.4,619.7,339.4z"/><path d="M619.7,680H380.2c-17.8,0-32.3,14.4-32.3,32.3v239.8c0,17.9,14.5,32.3,32.3,32.3h239.5c17.8,0,32.3-14.4,32.3-32.3V712.3C652,694.5,637.6,680,619.7,680z"/><path d="M957.7,10.1H718.2c-17.8,0-32.3,14.5-32.3,32.3v239.8c0,17.9,14.5,32.3,32.3,32.3h239.5c17.8,0,32.3-14.4,32.3-32.3V42.4C990,24.5,975.5,10.1,957.7,10.1z"/><path d="M957.7,339.5H718.2c-17.8,0-32.3,14.4-32.3,32.3v239.8c0,17.8,14.5,32.3,32.3,32.3h239.5c17.8,0,32.3-14.4,32.3-32.3V371.8C990,353.9,975.5,339.5,957.7,339.5z"/><path d="M957.7,680H718.2c-17.8,0-32.3,14.4-32.3,32.3v239.8c0,17.8,14.5,32.3,32.3,32.3h239.5c17.8,0,32.3-14.4,32.3-32.3V712.3C990,694.5,975.5,680,957.7,680z"/></g></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></g>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!--Logo + searchbox + buttons-->
 
-            </div>
-        </body>
-    
+                <div class="main-content">
+                    <div class="logo">
+                        <img src="images/glogo.png" alt="Google Logo">
+                    </div>
+                    <div class="searchbox-frame">
+                        <img src="images/searchbutton.png" style="padding-top: 14px; padding-left: 6px; width: 20px; height: auto;">
+                        <input type="search" class="searchbox-window">
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Google Search">
+                        <input type="submit" value="I'm Feeling Lucky!">
+                    </div>
+                </div>
 
+                <!--Bottom navigation bar-->
+                
+                <div class="navbar-bottom">
+                    <div class="nav1">
+                        <ul class="nav1-left">
+                            <li>Advertising</li>
+                            <li>Business</li>
+                            <li>About</li>
+                            <li>How Search works</li>
+                        </ul>
+                        <ul class="nav1-right">
+                            <li>Privacy</li>
+                            <li>Terms</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                    <div class="nav2">
+                    <ul>
+                        <li>Poland</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
